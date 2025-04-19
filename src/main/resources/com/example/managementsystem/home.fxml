@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.managementsystem.HomeController">
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: pink; -fx-padding: 15;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="Vehicle Rental System" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+
+            <Text style="-fx-font-size: 28; -fx-fill: #2c3e50;" text="Welcome to Our Vehicle Rental System" />
+
+            <Text style="-fx-font-size: 16; -fx-fill: #7f8c8d;" text="Reliable rentals. Exceptional service." />
+
+            <HBox alignment="CENTER" spacing="20">
+                <Button onAction="#goToLogin" style="-fx-background-color: pink; -fx-text-fill: white; -fx-font-weight: bold;" text="Login" />
+                <Button onAction="#goToRegister" style="-fx-background-color: aqua; -fx-text-fill: white; -fx-font-weight: bold;" text="Register" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-background-color: #ecf0f1; -fx-padding: 10;">
+            <Label style="-fx-text-fill: #7f8c8d;" text="© 2023 Vehicle Rental System. All rights reserved." />
+        </HBox>
+    </bottom>
+</BorderPane>
